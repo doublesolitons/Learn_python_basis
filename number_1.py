@@ -1,4 +1,4 @@
-number = 'branch'
+number = 'remote master'
 NUMBER = 0
 Number = 2
 print('number here')
