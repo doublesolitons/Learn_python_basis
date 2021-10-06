@@ -1,4 +1,4 @@
-number = 1
+number = 100
 print('number here')
 print('add middle line')
 print('now add one more line')
