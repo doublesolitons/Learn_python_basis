@@ -1,6 +1,5 @@
 number = 1
-NUMBER = 0
-Number = 2
 print('number here')
-
+print('add middle line')
 print('now add one more line')
+print('add the last line')
