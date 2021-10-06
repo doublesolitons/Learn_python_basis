@@ -1,4 +1,4 @@
-number = 6
+number = 'master'
 NUMBER = 0
 Number = 2
 print('number here')
