@@ -1,4 +1,4 @@
-number = 1
+number = 100
 NUMBER = 0
 Number = 2
 print('number here')
