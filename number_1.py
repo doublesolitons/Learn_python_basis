@@ -1,4 +1,4 @@
-number = 11
+number = 6666
 NUMBER = 0
 Number = 2
 print('number here')
