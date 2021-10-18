@@ -110,14 +110,44 @@ print(df2[['A', 'B']].max())
 
 ts = pd.Series(np.random.randn(50), index = pd.date_range('today', periods=50))
 ts = ts.cumsum()
-ts.plot()
+# ts.plot()
 # plt.show()
 
 df = pd.DataFrame(np.random.randn(50, 4), index=ts.index, columns=['A', 'B', 'X', 'Y'])
 df = df.cumsum()
-df.plot()
+# df.plot()
 # plt.show()
 
 df = pd.DataFrame({'A': [1, 2, 2, 2, 4, 4, 5, 5, 6, 6, 7, 8, 8]})
 print(df.loc[df['A'].shift() != df['A']])
 # print(df)
+
+x = np.linspace(0, 10, 25)
+y = x * x + 2
+
+# plt.plot(x, y, 'r')
+# plt.subplot(1, 2, 1)
+# plt.plot(x, y, 'r--')
+# plt.subplot(2, 2, 2)
+# plt.plot(x, y, 'g*-')
+# plt.show()
+
+fig = plt.figure()
+axes = fig.add_axes([.18, .1, .8, .8])
+axes.plot(x, y, 'r')
+# plt.show()
+
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(16, 9), dpi=100)
+for ax in axes:
+    ax.plot(x, y, 'r')
+
+fig = plt.figure()
+axes1 = fig.add_axes([.1, .1, .8, .8])
+axes2 = fig.add_axes([.5, .5, .2, .2])
+axes1.plot(x, y, 'r')
+axes2.plot(y, x, 'g')
+
+fig = plt.figure(figsize=(16, 9), dpi=100)
+fig.add_subplot()
+plt.plot(x, y, 'r')
+plt.show()
